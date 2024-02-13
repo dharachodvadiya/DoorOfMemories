@@ -9,11 +9,11 @@ namespace jigsaw
     {
         public static GameManager Instance;
         public SpriteRenderer pickSlideSprite;
-        public SpriteRenderer removeSlideSprite;
 
         public Sprite spriteGridDefault;
 
         public List<SliceInfo> sliceInfos;
+        public List<GridItem> gridItem;
 
         public GameObject objPrefab;
 
@@ -26,9 +26,7 @@ namespace jigsaw
         SliceClickEvent sliceClickEvent;
 
         bool isSliceSelect = false;
-        bool isRemoveSlice = false;
         SliceInfo currSelectedItemSlice;
-        SliceInfo currRemovedItemSlice;
         GridItem currGridItem;
         GridItem prevGridItem;
 
@@ -36,9 +34,14 @@ namespace jigsaw
         bool isSelectFromGrid;
 
         Vector3 mousePos;
+
+        String answer = "-1_0_1_-1_2_3_4_5_6_7_8_9_10_11_12_13_";
+
+        bool isResultDecalre = false;
         // Start is called before the first frame update
         void Start()
         {
+            isResultDecalre = false;
             Instance = this;
             sliceClickEvent += setOnSlickClick;
             objectPool = new ObjectPool(objPrefab, objSliceParent);
@@ -55,6 +58,8 @@ namespace jigsaw
         // Update is called once per frame
         void Update()
         {
+            if (isResultDecalre)
+                return;
             if(isSliceSelect)
             {
                 pickSlideSprite.gameObject.SetActive(true);
@@ -155,6 +160,8 @@ namespace jigsaw
                     }
                     currGridItem.removeSliceTemp();
                     currGridItem.addSlicePer(currSelectedItemSlice);
+
+                    checkResult();
                 }else if(currSelectedItemSlice != null)
                 {
                    
@@ -167,6 +174,30 @@ namespace jigsaw
                 isSliceSelect = false;
 
 
+            }
+        }
+
+        void checkResult()
+        {
+            int count = gridItem.Count;
+            string userSolution = "";
+
+            for (int i = 0; i < count; i++)
+            {
+                if(gridItem[i].getPerItemSlice() != null)
+                {
+                    userSolution += $"{gridItem[i].getPerItemSlice().id}_";
+                }
+                else
+                {
+                    userSolution += "-1_";
+                }
+            }
+
+            if(answer == userSolution)
+            {
+                isResultDecalre = true;
+                Debug.Log("win");
             }
         }
 

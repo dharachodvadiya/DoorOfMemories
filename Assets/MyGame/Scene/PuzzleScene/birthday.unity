@@ -4163,34 +4163,51 @@ MonoBehaviour:
   removeSlideSprite: {fileID: 72650832}
   spriteGridDefault: {fileID: 21300000, guid: bdcb5f14cbd8d8c4e837af223f7d92a9, type: 3}
   sliceInfos:
-  - id: 0
+  - id: 8
     sprite: {fileID: 832010081, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 6
     sprite: {fileID: -569110979, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 2
     sprite: {fileID: 966322313, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 1
     sprite: {fileID: 673374513, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 13
     sprite: {fileID: -808032737, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 3
     sprite: {fileID: -275384495, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 5
     sprite: {fileID: 840609261, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 10
     sprite: {fileID: -809795868, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 12
     sprite: {fileID: 1352521298, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 11
     sprite: {fileID: -161777675, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 7
     sprite: {fileID: -435731081, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 9
     sprite: {fileID: -1439608495, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
-  - id: 0
+  - id: 4
     sprite: {fileID: -1001057701, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
   - id: 0
     sprite: {fileID: 1443479638, guid: 76bbedb0a5d22d448b7b0ad1a52d77b8, type: 3}
+  gridItem:
+  - {fileID: 1055340800}
+  - {fileID: 2021129159}
+  - {fileID: 1118829829}
+  - {fileID: 1849839323}
+  - {fileID: 1993990824}
+  - {fileID: 734062629}
+  - {fileID: 495436240}
+  - {fileID: 1943859169}
+  - {fileID: 1504570248}
+  - {fileID: 425651585}
+  - {fileID: 1670436366}
+  - {fileID: 163104887}
+  - {fileID: 447484676}
+  - {fileID: 477025669}
+  - {fileID: 164103976}
+  - {fileID: 1504733397}
   objPrefab: {fileID: 1870190417451369933, guid: 5347348f6c4feb6449df9901d7fa97b7, type: 3}
   objSliceParent: {fileID: 1461956666}
   objectPool: {fileID: 16637973}
