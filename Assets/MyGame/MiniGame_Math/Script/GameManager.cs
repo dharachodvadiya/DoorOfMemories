@@ -22,6 +22,7 @@ namespace math
                 if(inputField.text.Trim() == "40")
                 {
                     Debug.Log("win");
+                    nextDoorDilog.Instance.openDilog();
                     objError.SetActive(false);
                 }
                 else

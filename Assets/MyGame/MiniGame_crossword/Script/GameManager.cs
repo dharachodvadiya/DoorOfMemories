@@ -207,6 +207,7 @@ namespace crossWord
             {
                 isResultDecalre = true;
                 Debug.Log("win");
+                nextDoorDilog.Instance.openDilog();
             }
         }
     }

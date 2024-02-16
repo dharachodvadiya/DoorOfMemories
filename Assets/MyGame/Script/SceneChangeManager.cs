@@ -6,7 +6,10 @@ public class SceneChangeManager : MonoBehaviour {
     public enum EnumScene {
        init,
        home,
-       menu
+        Win,
+        hobby,
+        birthday,
+        Math
     }
 
     string currentScene = null;
@@ -34,6 +37,7 @@ public class SceneChangeManager : MonoBehaviour {
         // yield return LoadSplashAtStartCoroutine();
         // SceneChangeManager.Instance.LoadNextScreen(SceneChangeManager.EnumScene.home.ToString());
         yield return LoadScene(EnumScene.home.ToString(), 0f, 1f);
+        yield return SetActiveScene(EnumScene.home.ToString());
     }
 
     /*  private static IEnumerator LoadSplashAtStartCoroutine () {

@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/MyGame/Scene/home.unity
     guid: 869f46a013fdfb34eb8b56d624afb1de
   - enabled: 1
-    path: Assets/MyGame/Scene/menu.unity
-    guid: 0c84e6a6ebef1fc41b7d0fe0859e00e3
+    path: Assets/MyGame/Minigame_jigsaw/Scene/birthday.unity
+    guid: c5784e4b8427c514da8a7de105cd62f9
+  - enabled: 1
+    path: Assets/MyGame/MiniGame_crossword/Scene/hobby.unity
+    guid: 1adcbccd66f05f24b8bf9dba7afca367
+  - enabled: 1
+    path: Assets/MyGame/MiniGame_Math/Scene/Math.unity
+    guid: 8c995e25b46323f49b875408087422d3
+  - enabled: 1
+    path: Assets/MyGame/Scene/Win.unity
+    guid: 981cab5b8584775438ae674b3597c829
   m_configObjects: {}

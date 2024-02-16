@@ -198,6 +198,7 @@ namespace jigsaw
             {
                 isResultDecalre = true;
                 Debug.Log("win");
+                nextDoorDilog.Instance.openDilog(0.3f);
             }
         }
 
