@@ -27,4 +27,9 @@ public class UIManager : MonoBehaviour
     {
         SceneChangeManager.Instance.LoadNextScreen(SceneChangeManager.EnumScene.home.ToString());
     }
+    public void btn_help()
+    {
+        HelpDilog.Instance.openDilog();
+    }
+
 }
